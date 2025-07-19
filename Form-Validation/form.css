@@ -1,0 +1,63 @@
+html, body {
+    background-color: rgb(235, 255, 144);
+}
+
+.form{
+      width: 350px;
+      margin-left: 10px auto;
+      margin-right: 10px auto;
+      padding: 20px;
+      border: 3px solid rgb(0, 0, 0); 
+      border-radius: 15px;
+      background-color: #ffddb3;
+
+}
+
+.form {
+    width: 390px;
+    text-align: justify;
+    padding: 20px;
+    margin: auto;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
+
+#submit,#cancel{
+    background-color: rgb(255, 191, 107);
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    width: 370px;
+}
+
+#fname,#lname,#age,#email {
+    width: 240px;
+}
+
+.tt {
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.tt,th,td{
+      width: 350px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 1px solid rgb(0, 0, 0); 
+      border-radius: 15px;
+}
+
+th, td {
+    padding: 25px;
+    margin: 10px;
+}
+
+input, label, textarea, select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

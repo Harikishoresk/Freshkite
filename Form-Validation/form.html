@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="fr.css">
+    <link rel="shortcut icon" href="form_img.png" type="image/x-icon">
+</head>
+<body>
+    <p id="pa"></p>
+    <form class="form" id="form">
+        <h3 style="text-align: center;">FORM VALIDATION</h3>
+        <label for="firstname">First name :</label><br>
+            <input type="text" name="firstname" id="fname"><br>
+
+        <label for="lastname">Last name :</label><br>
+            <input type="text" name="lastname" id="lname" ><br>
+
+        <label for="age">Age :</label><br>
+            <input type="number" name="age" id="age" min="0" max="150" ><br>
+
+        <label for="email">Email :</label><br>
+            <input type="email" name="mail" id="email"  ><br>
+        
+        <label for="gender">Select your gender :</label><br>
+            <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Male">Male</label><br>
+
+            <input type="radio" name="gender" id="Female" value="Female">
+                <label for="Female">Female</label><br>
+
+            <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label><br><br>
+
+        <label for="Luxury">Select your current Luxuries :</label><br>
+            <input type="checkbox" name="options" id="luxury1" value="Car">
+                <label for="luxury1">Car</label><br>
+
+            <input type="checkbox" name="options" id="luxury2" value="Bike">
+                <label for="luxury2">Bike</label><br>
+
+            <input type="checkbox" name="options" id="luxury3" value="House">
+                <label for="luxury3">House</label><br>
+
+            <input type="checkbox" name="options" id="luxury4" value="Other">
+                <label for="luxury4">Other</label><br>
+
+        <label for="comment">Comments</label><br>
+            <textarea name="comment" id="comment" style="width: 250px;"></textarea><br>
+
+        <label for="Income">Select your monthly income</label><br>
+            <select name="dropdown" id="income"  style="width: 250px;">
+                <option value="">--select</option>
+                <option value="below 15000">Below 15000</option>
+                <option value="15000 to 50000">15000 to 50000</option>
+                <option value="ablove 50000">Above 50000</option>
+            </select><br><br>
+
+        <button type="button" id="submit">Submit</button><br>
+        <button type="button" id="cancel">Cancel</button>
+
+        <script src="form.js"></script>
+    </form>
+            <div id="table1"></div>
+</body>
+</html>
