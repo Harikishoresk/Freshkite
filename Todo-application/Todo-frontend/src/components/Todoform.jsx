@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react'
 
 const Todoform = () => {
   return (
@@ -19,12 +19,12 @@ const Todoform = () => {
   )
 }
 
-export default Todoform
+export default Todoform */
 
 
 import { useEffect, useState } from "react";
 
-export const Taskform = ({ onAddTodo, etask }) => {
+export const Todoform = ({ onAddTodo, etask }) => {
   const [todo, setDescription] = useState(etask?.todo ?? '');
   const [status, setStatus] = useState(etask?.status ?? "assigned");
 

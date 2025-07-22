@@ -16,7 +16,7 @@ export default todoitem */
 
 import { FaEdit, FaTrash } from "react-icons/fa";
 
-export default function TaskItem({ task, onEdit, onDelete }) {
+export function Todoitem({ task, onEdit, onDelete }) {
 
     const statusColors = {
         assigned: "bg-yellow-200 text-yellow-800 ",

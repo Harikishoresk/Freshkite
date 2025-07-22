@@ -31,10 +31,14 @@ api.interceptors.response.use(
         return res.data;
     },
     (err) => {
-        const err = err.response?.data?.error || "An error occurred"
-        toast.error(err);
+        const msg = err.response?.data?.error || "An error occurred"
+        toast.error(msg);
 
-        return Promise.reject(err);
+        if(err.response?.status == 401) {
+            console.log("Error", msg);
+        }
+
+        return Promise.reject(msg);
     }
 )
 
